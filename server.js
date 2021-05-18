@@ -13,7 +13,7 @@ var HTTPS_PORT = 3000,
 
 //this allows more reliable camera connection, but extends boot time by 5 seconds. It also requires the sudoers rule below
 //use 'sudo visudo' and add this line to the bottom: ubuntu ALL=(root) NOPASSWD: /home/ubuntu/catkin_ws/src/roboquest_ui/src/resetUsbCams.sh
-var RESET_USB_PORTS_ON_BOOT = true;
+var RESET_USB_PORTS_ON_BOOT = false;
 
 
 var express = require('express');

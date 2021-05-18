@@ -61,7 +61,7 @@ class SerialObject {
 				for(let i = 0; i < value.length; i++){
 					if(this.splitLine(this.usbLE,value[i])){
 						if(this.buffer.length != 0){
-							let str = String.fromCharCode(this.buffer);
+							let str = new TextDecoder().decode(Uint8Array.from(this.buffer));
 							console.log(this.buffer);
 							sendToRos(this.WA['topic2'],{value:str},'_serial');
 							this.flashRX();
