@@ -15,7 +15,7 @@
     "opencv4nodejs": "^5.6.0",
     "raspberry-pi-camera-native": "0.0.0",
     "rosnodejs": "^3.0.2",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.1",
     "tree-kill": "^1.2.2"
   },
   "repository": {
